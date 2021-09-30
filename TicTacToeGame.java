@@ -2,19 +2,22 @@ package com.bz.firstworkshop;
 
 public class TicTacToeGame {
 
-	
-	static void startGame() {
-		char [] boardOfChar = new char[10] ;
-		for (int i =1; i<boardOfChar.length; i++ ) {
+	static void startGame() { // Creation Of static method named startGame
+		char[] boardOfChar = new char[10];
+
+		for (int i = 1; i < boardOfChar.length; i++) {
 			boardOfChar[i] = ' ';
 		}
+
 		System.out.println(boardOfChar);
 	}
-	
-	
+
 	public static void main(String[] args) {
-		
-		TicTacToeGame.startGame();
+
+		System.out.println("Welcome To the Tic Tac Toe Game");
+
+		TicTacToeGame.startGame(); // Calling the method by using classname
+
 	}
 
 }
